@@ -53,9 +53,14 @@ $env:JAVA_HOME = <jdk-install-dir>
 There are many ways to install Jenkins:
 - With package installer
 - with wget with Redhat pkg
-- (Mac) with brew example : `brew install jenkins-lts`
+- (Mac) with brew example : 
+``
+brew install jenkins-lts
+brew services start jenkins-lts
+```
 
-Here are steps to install on linux distribution using wget 
+- Steps to install on linux distribution using wget 
+
 - INSTALL wget
 - Download Jenkins repo
 - Import required key
@@ -79,3 +84,20 @@ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
  sudo systemctl start jenkins
  ```
+
+ ## Admin password location path
+ /Users/aolfa/.jenkins/secrets/initialAdminPassword
+(86d830db101340ff89aa572d62b150b6)
+
+## Change password
+localhost:8080/admin/password
+user : admin
+password : ****
+and type new password then save
+
+## Create first admin user
+
+
+
+
+
