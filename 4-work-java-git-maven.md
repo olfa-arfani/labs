@@ -24,7 +24,7 @@ This step goes to maven different build phases(validate, compile, test, package,
 
 In order to have the Maven Project  type, you will need to install the Maven Project Plugin.
 
-https://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin If you are building a complicated maven project, definitely pick the maven project type here, this is a project template that Jenkins has reserved specifically for Maven-based projects.
+[jenkins maven plugin](https://wiki.jenkins-ci.org/display/JENKINS/Maven+Project+Plugin) If you are building a complicated maven project, definitely pick the maven project type here, this is a project template that Jenkins has reserved specifically for Maven-based projects.
 
 If you got the below errors while putting the Github URL on Jenkins:
 
@@ -32,7 +32,7 @@ Failed to connect to repository : Error performing command: C:\Git\bin ls-remote
 
 or 
 
-Failed to connect to repository : Error performing command: C:\Users\mks7kor\AppData\Local\Programs\Git\cmd ls-remote -h https://github.com/jleetutorial/maven-project.git HEAD 
+Failed to connect to repository : Error performing command: C:\Users\toto\AppData\Local\Programs\Git\cmd ls-remote -h https://github.com/jleetutorial/maven-project.git HEAD 
 
 Solution:
 

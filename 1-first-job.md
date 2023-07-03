@@ -12,3 +12,5 @@
   Execute shell
      echo "Hello first job"
 
+![Jenkins dashboard](./captures/jenkins-dashboard.png)
+![First job](./captures/first-job.png)

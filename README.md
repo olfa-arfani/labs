@@ -1,4 +1,6 @@
-# Make sure Java is installed in your machine or use openjdk11
+# Installation guide
+
+## Make sure Java is installed in your machine or use openjdk11
 
 ## check .bash_profile or .bashrc depending on your environment settings
 
@@ -54,7 +56,7 @@ There are many ways to install Jenkins:
 - With package installer
 - with wget with Redhat pkg
 - (Mac) with brew example : 
-``
+```
 brew install jenkins-lts
 brew services start jenkins-lts
 ```
@@ -78,12 +80,12 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/
 
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 
- sudo yum install -y jenkins
+sudo yum install -y jenkins
 
- sudo systemctl enable jenkins
+sudo systemctl enable jenkins
 
- sudo systemctl start jenkins
- ```
+sudo systemctl start jenkins
+```
 
  ## Admin password location path
  /Users/aolfa/.jenkins/secrets/initialAdminPassword

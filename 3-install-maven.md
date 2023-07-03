@@ -1,5 +1,5 @@
 - Download from
-https://maven.apache.org/download.cgi
+[maven download](https://maven.apache.org/download.cgi)
 
 - Edit bash_profile or .bashrc and add path to maven/bin
 ```
