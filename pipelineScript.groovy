@@ -1,4 +1,4 @@
-
+i
 pipeline {
     agent any
     tools {
@@ -16,14 +16,16 @@ pipeline {
         }
 
         stage ('Build') {
-         steps {
+          steps {
  		withMaven {
-                dir("maven-project") {
-                 	sh "mvn clean install"
-		}
-              }  
-	}	
-	post {
+        		dir('maven-project'){
+
+	                 	sh "mvn clean install"
+				}
+			}
+                
+	       }	
+	  post {
                 success {
                     junit 'maven-project/target/surefire-reports/**/*.xml' 
                 }
