@@ -24,7 +24,7 @@ pipeline {
           }     
 	     post {
                 success {
-                    junit 'maven-project/target/surefire-reports/**/*.xml' 
+                    junit 'maven-project/webapp/target/surefire-reports/**/*.xml' 
                 }
             }
         }
