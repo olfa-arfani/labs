@@ -24,7 +24,6 @@ pipeline {
 				}
 			}
                 
-	       }	
 	  post {
                 success {
                     junit 'maven-project/target/surefire-reports/**/*.xml' 
