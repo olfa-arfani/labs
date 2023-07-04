@@ -22,7 +22,9 @@ pipeline {
 				}
 			}
             realtimeJUnit('**/target/surefire-reports/TEST-*.xml') {
-                sh 'mvn -Dmaven.test.failure.ignore=true clean verify'
+                dir('maven-project'){
+                    sh 'mvn -Dmaven.test.failure.ignore=true clean verify'
+                }
             }
           }     
 	     
