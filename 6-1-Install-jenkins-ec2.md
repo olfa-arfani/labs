@@ -39,6 +39,6 @@ Jenkins should be now accessible
 - Initial Admin password should be stored in `/var/lib/jenkins/secrets/initialAdminPassword`
 
 - Create new admin and change password
-
+admin name = "admin-jenkins"
 
 
