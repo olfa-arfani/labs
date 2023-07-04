@@ -11,13 +11,13 @@ pipeline {
                 sh '''
                     echo "PATH = ${PATH}"
                     echo "M2_HOME = ${M2_HOME}"
+                    cd maven-project
                 '''
             }
         }
 
         stage ('Build') {
             steps {
-                sh 'cd maven-project'
 		sh 'mvn -Dmaven.test.failure.ignore=true install' 
             }
             post {
