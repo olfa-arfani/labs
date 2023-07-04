@@ -17,10 +17,10 @@ pipeline {
 
         stage ('Build') {
          steps {
-                sh "cd maven-project"
  		withMaven {
-                 
-                 sh "mvn clean install"
+                dir("maven-project") {
+                 	sh "mvn clean install"
+		}
               }  
 	}	
 	post {
