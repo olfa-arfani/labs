@@ -21,12 +21,11 @@ pipeline {
 	                 	sh "mvn clean install"
 				}
 			}
-          }     
-	     post {
-                success {
-                    junit 'maven-project/webapp/target/surefire-reports/**/*.xml' 
-                }
+            realtimeJUnit('**/target/surefire-reports/TEST-*.xml') {
+                sh 'mvn -Dmaven.test.failure.ignore=true clean verify'
             }
+          }     
+	     
         }
     }
 }
