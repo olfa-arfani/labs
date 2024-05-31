@@ -97,7 +97,7 @@ user : admin
 password : ****
 and type new password then save
 
-## Create first admin user
+small update to test synchro with Jira Compass
 
 
 
