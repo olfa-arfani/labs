@@ -1,0 +1,22 @@
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3005:3000
+    volumes:
+      - ./app:/usr/src/app
+    #  networks:
+    #   - doc-network
+
+    #doc-network: 
+    #
+
+
+
+
+    # db:
+    #   build: 
+    #     context: ./db
+    #     dockerfile: <path>
