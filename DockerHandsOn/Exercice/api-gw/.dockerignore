@@ -1,0 +1,14 @@
+# Fichiers Git
+2 . git
+3 . gitignore
+4 # Environnements virtuels
+5 venv /
+6 env /
+7 .venv /
+8 .env /
+9 # Fichiers Python compilés
+10 __pycache__ /
+11 *.pyc
+12 *.pyo
+13 *.pyd
+14 # Dossiers de dépendances
