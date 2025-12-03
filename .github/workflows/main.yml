@@ -20,4 +20,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         key: ${{ secrets.KEY }}
         port: ${{ secrets.PORT }}
-        script_path: ../../DockerHandsOn/Exercise-Compose/build.sh
+        script_path: /labs/DockerHandsOn/Exercise-Compose/build.sh
