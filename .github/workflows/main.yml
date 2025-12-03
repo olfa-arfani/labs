@@ -35,5 +35,4 @@ jobs:
           context: ./DockerHandsOn/Exercice-Compose
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
-          file: ./Dockerfile
      
