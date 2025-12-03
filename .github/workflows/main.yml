@@ -46,7 +46,7 @@ jobs:
          key: ${{ secrets.KEY }}
          port: ${{ secrets.PORT }}
          script: |
-           git clone https://github.com/olfa-arfani/labs.git
            cd ~/labs/DockerHandsOn/Exercice-Compose
-           docker -f compose.yml up -d 
+           git pull origin main
+           docker -f compose.yml up -d --build
      
