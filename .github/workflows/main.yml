@@ -42,9 +42,8 @@ jobs:
         uses: appleboy/ssh-action@v1
         with:
          host: ${{ secrets.HOST }}
-         username: ${{ secrets.USERNAME }}
+         username: ubuntu
          key: ${{ secrets.KEY }}
          port: ${{ secrets.PORT }}
-         fingerprint: ${{ secrets.FINGERPRINT }}
          script: whoami
      
