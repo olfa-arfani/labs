@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
     - run:
-        cd ../../DockerHandsOn/Exercice-Compose
+        cd DockerHandsOn/Exercise-Compose
     -
       name: Login to Docker Hub
       uses: docker/login-action@v3
@@ -30,10 +30,10 @@ jobs:
     - name: Build and push images to Docker Hub
       uses: docker/build-push-action@v4
       with:
-        context: .
+        context: ./DockerHandsOn/Exercice-Compose
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
-        file: Dockerfile
+        file: ./Dockerfile
         #target: development
 
 
