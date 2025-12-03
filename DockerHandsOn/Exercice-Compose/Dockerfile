@@ -1,6 +1,6 @@
 FROM node:lts-alpine
 WORKDIR /app
-COPY app/package.json app/yarn.lock ./
+COPY DockerHandsOn/Exercice-Compose/app/package.json app/yarn.lock ./
 COPY DockerHandsOn/Exercice-Compose/app/spec ./spec
 COPY DockerHandsOn/Exercice-Compose/app/src ./src
 RUN yarn install
