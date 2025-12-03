@@ -32,5 +32,4 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
           file: ./DockerHandsOn/Exercice-Compose/Dockerfile
-          target: development
      
