@@ -48,5 +48,5 @@ jobs:
          script: |
            cd ~/labs/DockerHandsOn/Exercice-Compose
            git pull origin main
-           docker -f compose.yml up -d --build
+           docker compose up -d --build
      
