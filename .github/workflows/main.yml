@@ -31,6 +31,6 @@ jobs:
           context: .
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
-          file: ./Exercice-Compose/Dockerfile
+          file: ./DockerHandsOn/Exercice-Compose/Dockerfile
           target: development
      
