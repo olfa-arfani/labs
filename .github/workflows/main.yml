@@ -25,6 +25,10 @@ jobs:
      -  name: Set up docker buildx
         uses: docker/setup-buildx-action@v2
 
+     -  run: |
+         cd DockerHandsOn/Exercice-Compose
+         ls -l
+
      -  name: Build and push images to Docker Hub
         uses: docker/build-push-action@v4
         with:
