@@ -32,7 +32,7 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/app:${{ github.sha }}
         file: ./DockerHandsOn/Exercice-Compose/Dockerfile
-        target: development
+        #target: development
 
 
     #- name: Execute remote SSH commands using password
