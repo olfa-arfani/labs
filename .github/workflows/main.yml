@@ -12,7 +12,7 @@ jobs:
     steps:
      - name: Checkout code
        uses: actions/checkout@v2
-       run: |
+     - run: |
          cd DockerHandsOn/Exercice-Compose
 
      - name: Login to Docker Hub
