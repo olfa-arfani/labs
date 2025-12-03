@@ -45,5 +45,6 @@ jobs:
          username: ${{ secrets.USERNAME }}
          key: ${{ secrets.KEY }}
          port: ${{ secrets.PORT }}
+         fingerprint: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCeOgyqHqMMAsaok9i0xfsFxIhHPQ24WJ+i8UxyVelFmuU8tHxLwwXj9kg7bVkKx6JcCrCTPhlV5qrwlMAY83Yiof6YhrUK8pNzdnQ+5xb6T/eLwjZFo6J8wxiWpwRHy6RWSLx4luZLS73eIXf9Cd9zZwELIsY1e9RZYNfFVpAxyj5J09eMzTs1q3FF/OQ1WSKfp6XHqOPsghLwA9wq7vVIZntioCAQDO7YFbuijJBL5gMMpQgeu1fuZbr5wZpTY3M9Mf0PN4LGOm/r7r4ZCvMp4d+9x7oT/Y8x3sH/BLnxqTbuSPQ6LV98Zifvb80C23d37R4NhE4qYdiQHsyWgZ+H key-pair-test"
          script: whoami
      
